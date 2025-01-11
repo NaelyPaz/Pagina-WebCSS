@@ -2,10 +2,6 @@
 <html>
     <head>
         <style>
-            * {
-                box-sizing: border-box;
-            }
-
             body {
                 font-size: 21px;
                 font-family: Arial, sans-serif;
@@ -16,10 +12,9 @@
                 height: 100vh;
                 margin: 0;
             }
-             /* AQUI fica o box onde fica as informaçoes de texto */
             .box {
                 width: 1950px;
-                height: 1200px;
+                height: 1120px;
                 padding: 55px;
                 border: 5px solid white;
                 border-radius: 3%;
@@ -29,20 +24,15 @@
             
             h1, h2, h3 {
                 color: white;
-            }
-            
-            /* MUDANDO a fonte pra itálico */
-            h1 {
-                font-style: italic;
-            }
-             /* modificando o tamanho da imagem e controlando ela */
-            .foto img {
+            } 
+            .foto img{
                 position: absolute;
                 transform-origin: top right;
                 top: 50px;
-                width: 400px;
+                width: 300PX;
                 height: auto;
                 border: 5px;
+                
                 padding: 50px;
                 border-radius: 8%;
                 right: 7%;
@@ -54,18 +44,17 @@
                 margin-left: 1440px;
                 margin-bottom: -50%;
             }
-
-            /* Estilo para os links */
+            /* deixa branco os links */
             a {
                 color: white;
                 text-decoration: none;
             }
-
+            
         </style>
     </head>
     <body>
         <div class="box">
-            <h1>Biografia do <i>Adriano</i></h1> <!-- Aqui o título "Adriano" foi colocado em itálico -->
+            <h1>Biografia do Adriano</h1>
             <h2>Índice</h2>
             <ol>
                 <li><a href="#nascimento">Introdução</a></li>
@@ -85,7 +74,7 @@
             <p><a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do">Currículo</a></p>
             <a href="mailto:seuemail@dominio.com">Enviar e-mail<br></a><br>
             <div class="foto">
-                <img src="img2/WhatsApp Image 2025-01-09 at 22.08.44.jpeg" alt="Foto">
+                <img src="/img2/WhatsApp Image 2025-01-09 at 22.08.44.jpeg" alt="Foto">
                 <p>"Na vida nada se deve temer, apenas<br>compreender.Agora o momento de<br>compreender mais, para temer menos."</p>
             </div>
         </div>
