@@ -2,6 +2,10 @@
 <html>
     <head>
         <style>
+            * {
+                box-sizing: border-box;
+            }
+
             body {
                 font-size: 21px;
                 font-family: Arial, sans-serif;
@@ -12,9 +16,10 @@
                 height: 100vh;
                 margin: 0;
             }
+             /* AQUI fica o box onde fica as informaçoes de texto */
             .box {
                 width: 1950px;
-                height: 1120px;
+                height: 1200px;
                 padding: 55px;
                 border: 5px solid white;
                 border-radius: 3%;
@@ -22,14 +27,22 @@
                 background: linear-gradient(90deg, rgba(10, 36, 102, 0.801) 0%, rgba(10, 10, 39, 0.399) 100%);
             }
             
-            .foto img{
+            h1, h2, h3 {
+                color: white;
+            }
+            
+            /* MUDANDO a fonte pra itálico */
+            h1 {
+                font-style: italic;
+            }
+             /* modificando o tamanho da imagem e controlando ela */
+            .foto img {
                 position: absolute;
                 transform-origin: top right;
                 top: 50px;
-                width: 300PX;
+                width: 400px;
                 height: auto;
                 border: 5px;
-                
                 padding: 50px;
                 border-radius: 8%;
                 right: 7%;
@@ -41,17 +54,24 @@
                 margin-left: 1440px;
                 margin-bottom: -50%;
             }
-            
+
+            /* Estilo para os links */
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
         </style>
     </head>
     <body>
         <div class="box">
-            <h1>Biografia do Adriano</h1>
+            <h1>Biografia do <i>Adriano</i></h1> <!-- Aqui o título "Adriano" foi colocado em itálico -->
             <h2>Índice</h2>
             <ol>
                 <li><a href="#nascimento">Introdução</a></li>
                 <li><a href="#formacao">Formação Acadêmica</a></li>
                 <li><a href="#trabalhos">Trabalhos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
             </ol>
             <h3 id="nascimento">Introdução</h3>
             <p>O professor Adriano Freitas de Sousa, um destacado profissional na área de Química, com ênfase em Físico-Química e Catálise.<br>Natural do Brasil, o professor Adriano é graduado, mestre e doutor em Química pela Universidade Federal do Ceará (UFC)<br>com uma formação sólida e uma trajetória acadêmica marcada por grandes conquistas. Seu doutorado, obtido em 2018 incluiu<br>um período de intercâmbio na Universidade de Delaware, nos Estados Unidos, com financiamento da CAPES, onde realizou estudos<br>de ponta na área de catálise e conversão de biomassa.</p>
@@ -64,10 +84,8 @@
             <h3 id="contatos">Contatos</h3>
             <p><a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do">Currículo</a></p>
             <a href="mailto:seuemail@dominio.com">Enviar e-mail<br></a><br>
-            
-            <a href="pagina2.html" class="link-voltar">Ir para a capa</a>
             <div class="foto">
-                <img src="img2/WhatsApp Image 2025-01-09 at 22.08.44.jpeg" alt="Foto">
+                <img src="/img2/WhatsApp Image 2025-01-09 at 22.08.44.jpeg" alt="Foto">
                 <p>"Na vida nada se deve temer, apenas<br>compreender.Agora o momento de<br>compreender mais, para temer menos."</p>
             </div>
         </div>
